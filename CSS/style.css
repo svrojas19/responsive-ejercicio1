@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+body, main{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Header y barra de navegación */
+
+header{
+    width: 100%;
+    height: 10vh;
+}
+
+header nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #83E631;
+}
+
+header nav ol{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+header nav ol li{
+    list-style: none;
+    padding: 5px 10px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+    color: azure;
+}
+
+header nav ol li:hover{
+    background-color: #2CFC28;
+    cursor: pointer;
+}
+
+/* Banner */
+
+.container{
+    width: 100%;
+    height: 90vh;
+    background-image: url('https://coosmetic.com/blog/wp-content/uploads/2014/02/la-foto-11-e1392468285384-1024x768.jpg');
+}
+
+.container .filter{
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.container .filter .col-60{
+    width: 60%;
+    margin-left: 100px;
+}
+
+.container .filter .col-60 h2{
+    font-family: 'Barlow', sans-serif;
+    font-size: 2.8rem;
+    color: #F2DF1B;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.container .filter .col-60 p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+    color: #F2DF1B;
+}
+
+.container .filter .col-60 button{
+    width: 30%;
+    padding: 7px 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+    background-color: #2CFC28;
+    color: azure;
+}
+
+.container .filter .col-60 button:hover{
+    background-color: #F2DF1B;
+    color: #2CFC28;
+    cursor: pointer;
+}
+
+/* Contenido de 3 columnas */
+
+.container-main{
+    width: 100%;
+}
+
+.container-main .row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.container-main .row .col-30{
+    width: 18em;
+    height: 50vh;
+    margin: 20px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container-main .row .col-30:nth-child(1){
+    background-image: url('https://i2.wp.com/toyou.international/wp-content/uploads/2018/12/pomegranate-3383814_1280.jpg?fit=990%2C657&ssl=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+.container-main .row .col-30:nth-child(2){
+    background-image: url('https://m.media-amazon.com/images/I/61lKdoK2oIL._AC_SS450_.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+.container-main .row .col-30:nth-child(3){
+    background-image: url('https://lopezcorrea.com/2017/images/nuecescerebro.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.container-main .row .col-30 h2{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: azure;
+    font-family: 'Barlow', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+}
+
+.container-main .row .col-30 p{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: azure;
+    font-family: 'Barlow', sans-serif;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    background-color: #F2DF1B;
+}
+
+footer .row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer .row .col-30{
+    width: 20em;
+}
+
+footer .row .col-30:nth-child(1) ul{
+    width: 80%;
+    padding-left: 0px;
+    margin-left: 20%;
+}
+
+footer .row .col-30:nth-child(1) ul li{
+    list-style: none;
+    padding: 5px 10px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.3rem;
+}
+
+footer .row .col-30:nth-child(1) ul li:hover{
+    cursor: pointer;
+    color: #2CFC28;
+}
+
+footer .row .col-30:nth-child(2) ul{
+    width: 100%;
+    padding-left: 0px;
+}
+
+footer .row .col-30:nth-child(2) ul li{
+    list-style: none;
+    padding: 5px 10px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.3rem;
+}
+
+footer .row .col-30:nth-child(2) ul li:hover{
+    cursor: pointer;
+    color: #2CFC28;
+}
+
+footer .row .col-30:nth-child(3) p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.3rem;
+}

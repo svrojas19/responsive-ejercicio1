@@ -5,7 +5,7 @@ body, main{
     margin: 0px;
 }
 
-/* Header y barra de navegación */
+/* Header-barra de navegación */
 
 header{
     width: 100%;
@@ -27,6 +27,7 @@ header nav ol{
     flex-direction: row;
     justify-content: center;
     justify-items: center;
+    padding-left: 0px;
 }
 
 header nav ol li{
@@ -219,3 +220,82 @@ footer .row .col-30:nth-child(3) p{
     font-family: 'Barlow', sans-serif;
     font-size: 1.3rem;
 }
+
+@media(max-width:1080px){
+    header nav ol li{
+        font: size 1.4em;
+    }
+}
+@media(max-width:768px){
+    footer.row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer.row.col-30{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .row .col-30:nth-child(1) ul{
+        width: 100%;
+        padding-left: 0px;
+        margin: 0px;
+        margin-bottom: 30px;
+    }  
+    footer .row .col-30:nth-child(1) ul li{
+        text-align: center;
+     }
+     footer .row .col-30:nth-child(2) ul{
+        width: 100%;
+        padding-left: 0px;
+        margin: 0px;
+        margin-bottom: 30px;
+    }  
+    footer .row .col-30:nth-child(2) ul li{
+        text-align: center;
+     }
+}
+@media(max-width:480px){
+    .container .filter .col-60 h2{
+        text-align: center;
+    }
+    
+    .container .filter .col-60 p{
+        text-align: center;
+        }
+    .container .filter .col-60 button{
+        width: 100%;
+        }
+    .container-main .row{
+         flex-direction: column;
+        }
+        
+    .container-main .row .col-30{
+            width: 80%;
+        }
+    }
+    @media(max-width:370px){
+        header{
+            height: 100%;
+         }
+         header nav{
+            height: 100%;
+         }
+        header nav ol{
+        flex-direction: column;
+        }
+        header nav ol li{
+            text-align: center;
+        }
+        .container .filter .col-60 p{
+            width: 90%;
+            margin-left: 0px;
+            margin: 0 auto;
+        }
+}
+
+
+
